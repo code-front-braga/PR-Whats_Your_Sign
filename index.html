@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's Your Sign ?</title>
+
+    <link rel="stylesheet" href="./src/assets/css/styles.css" />
+  </head>
+  <body>
+    <main id="main-container">
+      <section class="section-container">
+        <header>
+          <h1>Olá! Seja Bem-Vindo!</h1>
+        </header>
+
+        <form>
+          <div class="name-content">
+            <label for="name">seu nome</label>
+            <input type="text" id="name" />
+          </div>
+
+          <div class="birthday-content">
+            <label for="birthday">seu aniversário</label>
+            <input type="date" id="birthday" />
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div class="sign-container">
+          <div class="sign-info">
+            <h2>Seu signo é:</h2>
+            <span>Touro</span>
+          </div>
+
+          <img src="./src/assets/images/taurus_sign.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./dist/js/index.js"></script>
+  </body>
+</html>
