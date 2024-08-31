@@ -12,6 +12,7 @@ const fade = document.querySelector('.fade');
 const spanZodiacSignElement = document.querySelector('.zodiac-sign');
 const imageZodiacSignElement = document.querySelector('.sign-image');
 const userNameContent = document.querySelector('.name-content');
+const buttonCloseModalElement = document.querySelector('.button-close-modal');
 export function submitForm() {
     form.addEventListener('submit', e => {
         e.preventDefault();
@@ -22,6 +23,13 @@ export function submitForm() {
             getUserName();
             getUserZodiacSign();
         }
+        closeModal();
+    });
+}
+export function closeModal() {
+    buttonCloseModalElement?.addEventListener('click', () => {
+        modalZodiacSignInfo?.classList.remove('modal-visible');
+        fade?.classList.remove('fade-visible');
     });
 }
 export function getUserName() {
