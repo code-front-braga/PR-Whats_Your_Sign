@@ -25,7 +25,7 @@ body {
 }
 
 .section-container {
-  background: #000;
+  background: #00000096;
   box-shadow: 0 0 1.4rem #000;
   border-radius: 12px;
 
@@ -98,25 +98,33 @@ label {
 }
 
 .footer-container {
-  background: #000;
-
   width: 100%;
 
   position: absolute;
   bottom: 0;
 
   display: flex;
+  padding: 1.4rem;
 }
 
 .footer-content {
   margin: auto;
 
+  font-size: 1.6rem;
+
   display: flex;
   align-items: center;
+  gap: 2rem;
+  padding: 0 1.6rem;
 }
 
 .footer-content img {
-  width: 20rem;
+  background: #00000095;
+  border-radius: 4px;
+
+  width: 14rem;
+
+  padding: 0 1.4rem;
 }
 
 .error-text {
