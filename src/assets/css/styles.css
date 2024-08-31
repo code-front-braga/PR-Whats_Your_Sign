@@ -35,12 +35,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.8rem;
-  padding: 2.6rem;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .section-container header {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   line-height: 2;
 }
@@ -78,14 +78,14 @@ button {
 
   width: 100%;
 
-  padding: 1.6rem;
+  padding: 1.2rem;
 }
 
 button {
   cursor: pointer;
 
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
@@ -93,7 +93,7 @@ label {
   pointer-events: none;
   color: #000;
 
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 
   position: absolute;
   left: 1.6rem;
@@ -103,13 +103,12 @@ label {
   transition: 0.2s ease, top 0.2s ease;
 }
 
-input:is(:focus, :valid) ~ label {
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
   background: #fafafa;
   border-radius: 3px;
-
   left: 2rem;
   transform: translateY(-185%);
-
   padding-inline: 0.8rem;
 }
 
@@ -128,17 +127,17 @@ input:is(:focus, :valid) ~ label {
 }
 
 :is(h2, .user-name) .sign-info {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 .sign-info .sign {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .sign-container img {
   filter: drop-shadow(0 0 1.2rem #000);
 
-  width: 18rem;
+  width: 12rem;
 }
 
 .footer-container {

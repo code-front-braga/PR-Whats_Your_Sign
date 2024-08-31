@@ -3,8 +3,6 @@
 // // Criar função para alterar as imagens dos signos, conforme data de nascimento do usuário;
 // // Criar função que gera o texto Ex.: "Seu signo é: Touro";
 
-import { number } from 'zod';
-
 const form = document.querySelector('form') as HTMLFormElement;
 const inputNameElement = document.querySelector('#name') as HTMLInputElement;
 const inputBirthdayElement = document.querySelector('#birthday') as HTMLInputElement;
