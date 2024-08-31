@@ -1,17 +1,21 @@
-// // Criar função para captar o nome do usuário;
-// // Criar função para captar a data de nascimento do usuário (verificar REGEX);
-// // Criar função para alterar as imagens dos signos, conforme data de nascimento do usuário;
-// // Criar função que gera o texto Ex.: "Seu signo é: Touro";
+// Criar função para captar o nome do usuário;
+// Criar função para captar a data de nascimento do usuário (verificar REGEX);
+// Criar função para alterar as imagens dos signos, conforme data de nascimento do usuário;
+// Criar função que gera o texto Ex.: "Seu signo é: Touro";
+// Criar função para nova pesquisa;
 
 const form = document.querySelector('form') as HTMLFormElement;
 const inputNameElement = document.querySelector('#name') as HTMLInputElement;
 const inputBirthdayElement = document.querySelector('#birthday') as HTMLInputElement;
 const spanNameElement = document.querySelector('.user-name') as HTMLSpanElement;
 
+const modalZodiacSignInfo = document.querySelector('.modal-zodiac-sign-info');
+const fade = document.querySelector('.fade');
+
 const spanZodiacSignElement = document.querySelector('.zodiac-sign') as HTMLSpanElement;
 const imageZodiacSignElement = document.querySelector('.sign-image') as HTMLImageElement;
 
-const nameContent = document.querySelector('.name-content') as HTMLElement;
+const userNameContent = document.querySelector('.name-content') as HTMLElement;
 
 export function submitForm() {
   form.addEventListener('submit', e => {
@@ -20,9 +24,11 @@ export function submitForm() {
     let isValid = isValidInputFields();
 
     if (isValid) {
+      modalZodiacSignInfo?.classList.add('modal-visible');
+      fade?.classList.add('fade-visible');
+
       getUserName();
       getUserZodiacSign();
-      // getSignImage()
     }
   });
 }
@@ -39,11 +45,22 @@ export function isValidInputFields() {
 
   const regex = /^\d{2}\/\d{2}\/\d{4}$/;
 
-  if (inputNameElement.value === '' || Number(inputNameElement.value)) {
+  if (inputNameElement.value === '') {
     errorMessage(inputNameElement, 'Não deve estar vazio');
     isValid = false;
-  } else if (inputBirthdayElement.value === '' || !regex.test(inputBirthdayElement.value)) {
-    errorMessage(inputBirthdayElement, 'Aniversário não deve estar vazio');
+  }
+  if (Number(inputNameElement.value)) {
+    errorMessage(inputNameElement, 'Não pode conter números');
+    isValid = false;
+  }
+
+  if (inputBirthdayElement.value === '' || !regex.test(inputBirthdayElement.value)) {
+    errorMessage(inputBirthdayElement, 'O campo "Aniversário" não deve estar vazio');
+    isValid = false;
+  }
+
+  if (!regex.test(inputBirthdayElement.value)) {
+    errorMessage(inputBirthdayElement, 'O formato da data deve ser: "dd/mm/aaaa"');
     isValid = false;
   }
 
@@ -133,7 +150,7 @@ export function errorMessage(inputField: HTMLInputElement, message: string) {
   const p = document.createElement('p');
   p.textContent = message;
   p.classList.add('error-text');
-  nameContent.appendChild(p);
+  userNameContent.appendChild(p);
   inputField.insertAdjacentElement('afterend', p);
 }
 

@@ -14,6 +14,7 @@
   </head>
   <body>
     <main id="main-container">
+      <div class="fade"></div>
       <section class="section-container">
         <header>
           <h1>Olá! Seja Bem-Vindo (a)!</h1>
@@ -23,32 +24,35 @@
         <div class="section-content">
           <form class="form">
             <div class="name-content">
-              <input type="text" id="name" class="input" autocomplete="off" placeholder=" " />
               <label for="name">seu primeiro nome</label>
+              <input type="text" id="name" class="input" autocomplete="off" placeholder=" " />
             </div>
 
             <div class="birthday-content">
-              <input type="text" id="birthday" class="input" autocomplete="off" placeholder=" " />
               <label for="birthday">seu aniversário</label>
+              <input type="text" id="birthday" class="input" autocomplete="off" placeholder=" " />
             </div>
 
             <button type="submit" class="submit-button">Enviar</button>
           </form>
-
-          <div class="zodiac-sign-container">
-            <div class="zodiac-sign-info">
-              <h2><span class="user-name"></span> seu signo é:</h2>
-              <span class="zodiac-sign"></span>
-            </div>
-
-            <img
-              class="zodiac-sign-image"
-              src="./src/assets/images/all_signs.png"
-              alt="Imagem em formato de círculo contendo todos os signos."
-            />
-          </div>
         </div>
       </section>
+
+      <div class="modal-zodiac-sign-info">
+        <button class="button-close-modal">x</button>
+        <div class="zodiac-sign-content">
+          <div class="zodiac-sign-info">
+            <h2><span class="user-name"></span> seu signo é :</h2>
+            <span class="zodiac-sign"></span>
+          </div>
+
+          <img
+            class="zodiac-sign-image"
+            src="./src/assets/images/all_signs.png"
+            alt="Imagem em formato de círculo contendo todos os signos."
+          />
+        </div>
+      </div>
 
       <footer class="footer-container">
         <div class="footer-content">
