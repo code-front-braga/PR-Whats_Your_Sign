@@ -40,7 +40,9 @@ body {
 }
 
 .section-container header {
-  font-size: 3.2rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2;
 }
 
 .section-content {
@@ -125,11 +127,11 @@ input:is(:focus, :valid) ~ label {
   gap: 1rem;
 }
 
-.sign-info h2 {
+:is(h2, .user-name) .sign-info {
   font-size: 2.2rem;
 }
 
-.sign-info span {
+.sign-info .sign {
   font-size: 1.8rem;
 }
 
@@ -159,4 +161,8 @@ input:is(:focus, :valid) ~ label {
 
 .footer-content img {
   width: 20rem;
+}
+
+.error-text {
+  border: 3px solid red;
 }

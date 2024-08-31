@@ -16,31 +16,32 @@
     <main id="main-container">
       <section class="section-container">
         <header>
-          <h1>Olá! Seja Bem-Vindo!</h1>
+          <h1>Olá! Seja Bem-Vindo (a)!</h1>
+          <span>Descubra seu signo inserindo as informações abaixo</span>
         </header>
 
         <div class="section-content">
-          <form>
+          <form class="form">
             <div class="name-content">
-              <input type="text" id="name" required autocomplete="off" />
-              <label for="name">seu nome</label>
+              <input type="text" id="name" class="input" autocomplete="off" />
+              <label>seu primeiro nome</label>
             </div>
 
             <div class="birthday-content">
-              <input type="text" id="birthday" required autocomplete="off" />
-              <label for="birthday">seu aniversário</label>
+              <input type="text" id="birthday" class="input" autocomplete="off" />
+              <label>seu aniversário</label>
             </div>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="submit-button">Enviar</button>
           </form>
 
           <div class="sign-container">
             <div class="sign-info">
-              <h2>Seu signo é:</h2>
-              <span>Touro</span>
+              <h2><span class="user-name"></span> seu signo é:</h2>
+              <span class="zodiac-sign"></span>
             </div>
 
-            <img src="./src/assets/images/all_signs.png" alt="Imagem em formato de círculo contendo todos os signos." />
+            <img class="sign-image" src="./src/assets/images/all_signs.png" alt="Imagem em formato de círculo contendo todos os signos." />
           </div>
         </div>
       </section>
