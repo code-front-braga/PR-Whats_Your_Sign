@@ -11,6 +11,8 @@ const spanNameElement = document.querySelector('.user-name') as HTMLSpanElement;
 const spanZodiacSignElement = document.querySelector('.zodiac-sign') as HTMLSpanElement;
 const imageZodiacSignElement = document.querySelector('.sign-image') as HTMLImageElement;
 
+const nameContent = document.querySelector('.name-content') as HTMLElement;
+
 export function submitForm() {
   form.addEventListener('submit', e => {
     e.preventDefault();
@@ -131,6 +133,7 @@ export function errorMessage(inputField: HTMLInputElement, message: string) {
   const p = document.createElement('p');
   p.textContent = message;
   p.classList.add('error-text');
+  nameContent.appendChild(p);
   inputField.insertAdjacentElement('afterend', p);
 }
 

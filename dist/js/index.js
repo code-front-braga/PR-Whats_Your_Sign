@@ -8,6 +8,7 @@ const inputBirthdayElement = document.querySelector('#birthday');
 const spanNameElement = document.querySelector('.user-name');
 const spanZodiacSignElement = document.querySelector('.zodiac-sign');
 const imageZodiacSignElement = document.querySelector('.sign-image');
+const nameContent = document.querySelector('.name-content');
 export function submitForm() {
     form.addEventListener('submit', e => {
         e.preventDefault();
@@ -106,6 +107,7 @@ export function errorMessage(inputField, message) {
     const p = document.createElement('p');
     p.textContent = message;
     p.classList.add('error-text');
+    nameContent.appendChild(p);
     inputField.insertAdjacentElement('afterend', p);
 }
 submitForm();

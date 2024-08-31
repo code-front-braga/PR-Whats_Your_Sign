@@ -60,7 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.2rem;
+  gap: 4rem;
 }
 
 .name-content,
@@ -112,29 +112,29 @@ input:not(:placeholder-shown) ~ label {
   padding-inline: 0.8rem;
 }
 
-.sign-container {
+.zodiac-sign-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
 }
 
-.sign-info {
+.zodiac-sign-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 
-:is(h2, .user-name) .sign-info {
+:is(h2, .user-name) .zodiac-sign-info {
   font-size: 1.8rem;
 }
 
-.sign-info .sign {
+.zodiac-sign-info span {
   font-size: 1.6rem;
 }
 
-.sign-container img {
+.zodiac-sign-container img {
   filter: drop-shadow(0 0 1.2rem #000);
 
   width: 12rem;
@@ -163,5 +163,8 @@ input:not(:placeholder-shown) ~ label {
 }
 
 .error-text {
-  border: 3px solid red;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-indent: 1rem;
+  color: #fafafa;
 }
