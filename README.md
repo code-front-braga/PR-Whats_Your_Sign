@@ -1,6 +1,6 @@
 # ⏱️ What's Your Sign ?
 
-<img src='./src/assets/images/project_print.png' alt='Print do Projeto' />
+<img src='./src/assets/images/project_print.JPG' alt='Print do Projeto' />
 
 ## Sobre o Projeto:
 
@@ -88,5 +88,5 @@ Este projeto está licenciado sob a licença MIT.
 ## 🧑🏻‍💻 Autor:
 
 <a href="https://github.com/code-front-braga" style="text-align: justify;">
-<img src="./src/assets/images/F_L_2.svg" alt="Logo" style="width: 160px;">
+<img src="./src/assets/images/my_Logo.svg" alt="Logo" style="width: 160px;">
 </a>
