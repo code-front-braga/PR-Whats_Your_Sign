@@ -1,16 +1,16 @@
 export const zodiacImages = {
-    ariesImage: '/src/assets/images/aries_sign.png',
-    taurusImage: '/src/assets/images/taurus_sign.png',
-    geminiImage: '/src/assets/images/gemini_sign.png',
-    cancerImage: '/src/assets/images/cancer_sign.png',
-    leoImage: '/src/assets/images/leo_sign.png',
-    virgoImage: '/src/assets/images/virgo_sign.png',
-    libraImage: '/src/assets/images/libra_sign.png',
-    scorpioImage: '/src/assets/images/scorpio_sign.png',
-    sagittariusImage: '/src/assets/images/sagittarius_sign.png',
-    capricornImage: '/src/assets/images/carpicorn_sign.png',
-    aquariusImage: '/src/assets/images/aquarius_sign.png',
-    piscesImage: '/src/assets/images/pisces_sign.png',
+    ariesImage: '/src/assets/images/ariesImg.png',
+    taurusImage: '/src/assets/images/taurusImg.png',
+    geminiImage: '/src/assets/images/geminiImg.png',
+    cancerImage: '/src/assets/images/cancerImg.png',
+    leoImage: '/src/assets/images/leoImg.png',
+    virgoImage: '/src/assets/images/virgoImg.png',
+    libraImage: '/src/assets/images/libraImg.png',
+    scorpioImage: '/src/assets/images/scorpioImg.png',
+    sagittariusImage: '/src/assets/images/sagittariusImg.png',
+    capricornImage: '/src/assets/images/carpicornImg.png',
+    aquariusImage: '/src/assets/images/aquariusImg.png',
+    piscesImage: '/src/assets/images/piscesImg.png',
 };
 export function getZodiacSign(inputBirthday) {
     const [day, month] = inputBirthday.value.split('/').map(Number);
