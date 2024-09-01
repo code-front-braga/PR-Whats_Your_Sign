@@ -1,16 +1,16 @@
 export const zodiacImages = {
-    ariesImage: '/assets/images/aries.png',
-    taurusImage: '/assets/images/taurus.png',
-    geminiImage: '/assets/images/gemini.png',
-    cancerImage: '/assets/images/cancer.png',
-    leoImage: '/assets/images/leo.png',
-    virgoImage: '/assets/images/virgo.png',
-    libraImage: '/assets/images/libra.png',
-    scorpioImage: '/assets/images/scorpio.png',
-    sagittariusImage: '/assets/images/sagittarius.png',
-    capricornImage: '/assets/images/carpicorn.png',
-    aquariusImage: '/assets/images/aquarius.png',
-    piscesImage: '/assets/images/pisces.png',
+    ariesImage: 'assets/images/aries.png',
+    taurusImage: 'assets/images/taurus.png',
+    geminiImage: 'assets/images/gemini.png',
+    cancerImage: 'assets/images/cancer.png',
+    leoImage: 'assets/images/leo.png',
+    virgoImage: 'assets/images/virgo.png',
+    libraImage: 'assets/images/libra.png',
+    scorpioImage: 'assets/images/scorpio.png',
+    sagittariusImage: 'assets/images/sagittarius.png',
+    capricornImage: 'assets/images/carpicorn.png',
+    aquariusImage: 'assets/images/aquarius.png',
+    piscesImage: 'assets/images/pisces.png',
 };
 export function getZodiacSign(inputBirthday) {
     const [day, month] = inputBirthday.value.split('/').map(Number);
