@@ -139,6 +139,10 @@ function displayUserZodiacSign() {
     case isPiscesDate:
       displayZodiacSign('Peixes', piscesImage);
       break;
+
+    default:
+      console.log('Não existe signo para essa data');
+      break;
   }
 }
 
