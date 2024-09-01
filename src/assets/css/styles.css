@@ -127,7 +127,7 @@ label {
   padding: 0 1.4rem;
 }
 
-.error-text {
+.error-message {
   background: #fafafa;
   color: red;
   border-radius: 4px;
