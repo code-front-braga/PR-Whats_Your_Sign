@@ -1,0 +1,93 @@
+@media (max-width: 1025px) and (max-height: 600px) {
+  #wrapper-body {
+    width: 50rem;
+  }
+
+  .section-container header h1 {
+    font-size: clamp(1.4rem, 3vw, 3rem);
+  }
+
+  .section-content {
+    width: 25rem;
+  }
+
+  .form {
+    gap: 4rem;
+  }
+
+  .name-content,
+  .birthday-content,
+  .button-container {
+    width: 24rem;
+    height: 4rem;
+  }
+
+  .submit-button {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container header h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 360px) {
+  #wrapper-body {
+    width: 60rem;
+  }
+
+  .section-container header {
+    line-height: 2.6rem;
+  }
+
+  .section-container header h1 {
+    font-size: clamp(1.4rem, 2.2vw, 2.2rem);
+  }
+
+  .section-container header h2 {
+    font-size: 1.4rem;
+  }
+
+  .wrapper-section {
+    gap: 0rem;
+
+    width: 100%;
+  }
+
+  .section-content {
+    width: 100%;
+    height: 14rem;
+
+    margin: auto;
+  }
+
+  .form {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .name-content,
+  .birthday-content,
+  .button-container {
+    width: 40rem;
+    height: 4rem;
+  }
+
+  .zodiac-sign-image {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-zodiac-sign-info {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .modal-zodiac-sign-info {
+    width: 32rem;
+  }
+}
